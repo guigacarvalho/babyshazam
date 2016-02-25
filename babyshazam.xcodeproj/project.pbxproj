@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790A62371C75619700DDD662 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A62361C75619700DDD662 /* LogViewController.swift */; };
+		790A62391C7561DE00DDD662 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A62381C7561DE00DDD662 /* OptionsViewController.swift */; };
 		79A50B8C1C6B9D7B00507555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A50B8B1C6B9D7B00507555 /* AppDelegate.swift */; };
-		79A50B8E1C6B9D7B00507555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A50B8D1C6B9D7B00507555 /* ViewController.swift */; };
+		79A50B8E1C6B9D7B00507555 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A50B8D1C6B9D7B00507555 /* HomeViewController.swift */; };
 		79A50B911C6B9D7B00507555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A50B8F1C6B9D7B00507555 /* Main.storyboard */; };
 		79A50B931C6B9D7B00507555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A50B921C6B9D7B00507555 /* Assets.xcassets */; };
 		79A50B961C6B9D7B00507555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A50B941C6B9D7B00507555 /* LaunchScreen.storyboard */; };
 		79A50BA11C6B9D7B00507555 /* babyshazamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A50BA01C6B9D7B00507555 /* babyshazamTests.swift */; };
 		79A50BAC1C6B9D7B00507555 /* babyshazamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A50BAB1C6B9D7B00507555 /* babyshazamUITests.swift */; };
+		79E7D1F31C74D6DB002C43A0 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E7D1F21C74D6DB002C43A0 /* AnalysisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790A62361C75619700DDD662 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		790A62381C7561DE00DDD662 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		79A50B881C6B9D7B00507555 /* babyshazam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babyshazam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A50B8B1C6B9D7B00507555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79A50B8D1C6B9D7B00507555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79A50B8D1C6B9D7B00507555 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		79A50B901C6B9D7B00507555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79A50B921C6B9D7B00507555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79A50B951C6B9D7B00507555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		79A50BA71C6B9D7B00507555 /* babyshazamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = babyshazamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A50BAB1C6B9D7B00507555 /* babyshazamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = babyshazamUITests.swift; sourceTree = "<group>"; };
 		79A50BAD1C6B9D7B00507555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E7D1F21C74D6DB002C43A0 /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				79A50B8B1C6B9D7B00507555 /* AppDelegate.swift */,
-				79A50B8D1C6B9D7B00507555 /* ViewController.swift */,
+				790A62381C7561DE00DDD662 /* OptionsViewController.swift */,
+				79A50B8D1C6B9D7B00507555 /* HomeViewController.swift */,
+				79E7D1F21C74D6DB002C43A0 /* AnalysisViewController.swift */,
+				790A62361C75619700DDD662 /* LogViewController.swift */,
 				79A50B8F1C6B9D7B00507555 /* Main.storyboard */,
 				79A50B921C6B9D7B00507555 /* Assets.xcassets */,
 				79A50B941C6B9D7B00507555 /* LaunchScreen.storyboard */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79A50B8E1C6B9D7B00507555 /* ViewController.swift in Sources */,
+				79A50B8E1C6B9D7B00507555 /* HomeViewController.swift in Sources */,
 				79A50B8C1C6B9D7B00507555 /* AppDelegate.swift in Sources */,
+				79E7D1F31C74D6DB002C43A0 /* AnalysisViewController.swift in Sources */,
+				790A62371C75619700DDD662 /* LogViewController.swift in Sources */,
+				790A62391C7561DE00DDD662 /* OptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				79A50BB21C6B9D7B00507555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A50BB31C6B9D7B00507555 /* Build configuration list for PBXNativeTarget "babyshazamTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				79A50BB51C6B9D7B00507555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A50BB61C6B9D7B00507555 /* Build configuration list for PBXNativeTarget "babyshazamUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				79A50BB81C6B9D7B00507555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
