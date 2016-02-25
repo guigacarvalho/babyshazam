@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (3.1.5)
+  - AlamofireObjectMapper (2.1.0):
+    - Alamofire (~> 3.1.0)
+    - ObjectMapper (~> 1.0)
+  - Cartography (0.6.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - DZNEmptyDataSet (1.7.3)
+  - GCDKit (1.1.7)
+  - Kingfisher (1.9.3)
+  - ObjectMapper (1.1.5)
+  - R.swift (1.3.0):
+    - R.swift.Library (~> 1.1.0)
+  - R.swift.Library (1.1.0)
+  - XCGLogger (3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1.5)
+  - AlamofireObjectMapper (~> 2.1.0)
+  - Cartography (~> 0.6)
+  - ChameleonFramework/Swift
+  - DZNEmptyDataSet
+  - GCDKit (~> 1.1.7)
+  - Kingfisher (~> 1.9)
+  - ObjectMapper
+  - R.swift
+  - XCGLogger (~> 3.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  AlamofireObjectMapper: 24097576202064f8b0a583452dd934064f78dc0e
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  GCDKit: 00a091f8b7cb83c0591288d5a60b080a971b979c
+  Kingfisher: 9e37d2a78a082dc123bfe8a16de65de85518daae
+  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  R.swift: 43f8a833dd8cbb4a19908cbfd37fb982e9147899
+  R.swift.Library: 775f3086e07313ed1a1dfddca8418317f5a87397
+  XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
+
+COCOAPODS: 0.39.0
