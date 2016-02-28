@@ -23,8 +23,5 @@ pod 'XCGLogger', '~> 3.2'
 # color scheme
 pod 'ChameleonFramework/Swift'
 
-# generate code for resource files like images, fonts, storyboards
-pod 'R.swift'
-
 # global dispatch queue
 pod 'GCDKit', '~> 1.1.7'
