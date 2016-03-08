@@ -9,16 +9,17 @@
 import UIKit
 
 class LogViewController: UIViewController {
+    @IBOutlet weak var screenTitle: UILabel!
+    @IBOutlet weak var backBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let yellow:UIColor = UIColor(red: 250.0/255.0, green: 217.0/255.0, blue: 97/255.0, alpha: 1.0)
-        let orange:UIColor = UIColor(red: 247/255.0, green: 107/255.0, blue: 28/255.0, alpha: 1.0)
+        // Do any additional setup after loading the view, typically from a nib
         
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.colors = [yellow.CGColor, orange.CGColor]
-        view.layer.insertSublayer(gradient, atIndex: 0)
+        let setupView = UIShortcuts(view: view)
+        setupView.background()
+        setupView.setUpStrongText(screenTitle)
+        setupView.setUpBackButton(backBtn)
+
 
     }
     

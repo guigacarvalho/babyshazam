@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 
 class HomeViewController: UIViewController {
@@ -23,7 +24,7 @@ class HomeViewController: UIViewController {
 
         
         let titleText = NSAttributedString(string: "BABY\nSHAZAM", attributes: [
-            NSStrokeColorAttributeName : UIColor.whiteColor(),
+            NSStrokeColorAttributeName : UIColor.flatWhiteColor(),
             NSForegroundColorAttributeName : UIColor.whiteColor().colorWithAlphaComponent(0),
             NSStrokeWidthAttributeName : NSNumber(float: -4.0),
             NSFontAttributeName : UIFont(name: "Phosphate-Solid", size: 72)!
@@ -31,7 +32,7 @@ class HomeViewController: UIViewController {
         titleLabel.attributedText = titleText
 
         let cursiveFont = UIFont(name: "Billabong", size: 30)
-        let lightColor = UIColor.whiteColor()
+        let lightColor = UIColor.flatWhiteColor()
         subtitle.font = cursiveFont
         subtitle.textColor = lightColor
         buttonify(listenBtn)

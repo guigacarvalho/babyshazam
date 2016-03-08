@@ -172,6 +172,12 @@
                             <constraint firstItem="7mR-5f-Jc9" firstAttribute="top" secondItem="bbA-Ca-oUu" secondAttribute="bottom" constant="40" id="tfn-S7-cev"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="analisysLabel" destination="zej-ku-2ip" id="Fjz-da-m4t"/>
+                        <outlet property="backBtn" destination="TZj-fd-HDY" id="OBr-IG-z6y"/>
+                        <outlet property="questionLabel" destination="VJE-ju-thw" id="ZlV-zA-jTa"/>
+                        <outlet property="screenTitle" destination="7mR-5f-Jc9" id="70t-bw-d6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha2-7I-cVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,13 +195,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiG-eA-duS">
-                                <rect key="frame" x="292" y="70" width="29" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiG-eA-duS">
+                                <rect key="frame" x="286" y="60" width="28.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-al-mqX">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-al-mqX">
                                 <rect key="frame" x="43" y="61" width="43" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="&lt;"/>
@@ -205,7 +211,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Erb-al-mqX" firstAttribute="top" secondItem="7sx-cV-6xn" secondAttribute="bottom" constant="40" id="RcQ-Jd-P9p"/>
+                            <constraint firstItem="xiG-eA-duS" firstAttribute="centerX" secondItem="ccr-IF-TaO" secondAttribute="centerX" id="WWh-ET-5mh"/>
+                            <constraint firstItem="xiG-eA-duS" firstAttribute="top" secondItem="7sx-cV-6xn" secondAttribute="bottom" constant="40" id="hoy-7i-S1a"/>
+                            <constraint firstItem="Erb-al-mqX" firstAttribute="leading" secondItem="ccr-IF-TaO" secondAttribute="leadingMargin" constant="20" id="jUI-Mc-AQl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Erb-al-mqX" id="YgH-su-Tv2"/>
+                        <outlet property="screenTitle" destination="xiG-eA-duS" id="00s-gy-ea7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqd-VP-HpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,14 +239,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-Ld-yLo">
-                                <rect key="frame" x="288" y="92" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-Ld-yLo">
+                                <rect key="frame" x="261" y="60" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-Mb-wFd">
-                                <rect key="frame" x="23" y="83" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-Mb-wFd">
+                                <rect key="frame" x="40" y="60" width="30" height="30"/>
                                 <state key="normal" title="&lt;"/>
                                 <connections>
                                     <action selector="backToHome:" destination="z0K-4v-1hx" eventType="touchUpInside" id="FuW-zT-jt1"/>
@@ -238,7 +254,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RaU-Ld-yLo" firstAttribute="centerX" secondItem="oRe-UY-1le" secondAttribute="centerX" id="1XR-oc-qVB"/>
+                            <constraint firstItem="tsy-Mb-wFd" firstAttribute="top" secondItem="309-B3-rXD" secondAttribute="bottom" constant="40" id="3bN-Wq-vBz"/>
+                            <constraint firstItem="RaU-Ld-yLo" firstAttribute="top" secondItem="309-B3-rXD" secondAttribute="bottom" constant="40" id="TYi-yv-hPQ"/>
+                            <constraint firstItem="tsy-Mb-wFd" firstAttribute="leading" secondItem="oRe-UY-1le" secondAttribute="leadingMargin" constant="20" id="gFV-8d-r04"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="tsy-Mb-wFd" id="qZR-ie-9eG"/>
+                        <outlet property="screenTitle" destination="RaU-Ld-yLo" id="rvr-6R-Xur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vR7-RN-RMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
