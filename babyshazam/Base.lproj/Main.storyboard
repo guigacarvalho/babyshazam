@@ -122,27 +122,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your baby is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mR-5f-Jc9">
-                                <rect key="frame" x="254" y="60" width="93" height="21"/>
+                                <rect key="frame" x="254" y="60" width="93.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did we get it right?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJE-ju-thw">
-                                <rect key="frame" x="228" y="476" width="144" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did we get it right?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJE-ju-thw">
+                                <rect key="frame" x="175" y="475" width="250" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NXy-Vp-hYG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-j9-fDJ">
-                                <rect key="frame" x="228" y="550" width="30" height="30"/>
+                                <rect key="frame" x="175" y="550" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5SD-dF-NI8"/>
+                                </constraints>
                                 <state key="normal" title="Yes"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-ZB-qVA">
-                                <rect key="frame" x="338" y="550" width="30" height="30"/>
+                                <rect key="frame" x="355" y="550" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="poX-CQ-E2p"/>
+                                </constraints>
                                 <state key="normal" title="No"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-fd-HDY">
-                                <rect key="frame" x="40" y="60" width="30" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-fd-HDY">
+                                <rect key="frame" x="40" y="60" width="30" height="67"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="&lt;"/>
                                 <connections>
@@ -150,7 +159,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUNGRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zej-ku-2ip">
-                                <rect key="frame" x="222" y="121" width="157" height="49"/>
+                                <rect key="frame" x="222" y="120" width="157" height="49.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -175,8 +184,10 @@
                     <connections>
                         <outlet property="analisysLabel" destination="zej-ku-2ip" id="Fjz-da-m4t"/>
                         <outlet property="backBtn" destination="TZj-fd-HDY" id="OBr-IG-z6y"/>
+                        <outlet property="noBtn" destination="OyA-ZB-qVA" id="VIh-l1-SBh"/>
                         <outlet property="questionLabel" destination="VJE-ju-thw" id="ZlV-zA-jTa"/>
                         <outlet property="screenTitle" destination="7mR-5f-Jc9" id="70t-bw-d6R"/>
+                        <outlet property="yesBtn" destination="2b3-j9-fDJ" id="F2p-oR-T3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha2-7I-cVI" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 import ChameleonFramework
 
 
@@ -21,48 +22,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let setupView = UIShortcuts(view: view)
+        setupView.background()
+        setupView.buttonify(listenBtn)
+        setupView.buttonify(logBtn)
+        setupView.buttonify(optionsBtn)
+        setupView.setUpCursiveText(subtitle)
+        titleLabel.text = "BABY\nSHAZAM"
+        setupView.setUpBigText(titleLabel)
+        
 
-        
-        let titleText = NSAttributedString(string: "BABY\nSHAZAM", attributes: [
-            NSStrokeColorAttributeName : UIColor.flatWhiteColor(),
-            NSForegroundColorAttributeName : UIColor.whiteColor().colorWithAlphaComponent(0),
-            NSStrokeWidthAttributeName : NSNumber(float: -4.0),
-            NSFontAttributeName : UIFont(name: "Phosphate-Solid", size: 72)!
-            ])
-        titleLabel.attributedText = titleText
-
-        let cursiveFont = UIFont(name: "Billabong", size: 30)
-        let lightColor = UIColor.flatWhiteColor()
-        subtitle.font = cursiveFont
-        subtitle.textColor = lightColor
-        buttonify(listenBtn)
-        buttonify(logBtn)
-        buttonify(optionsBtn)
-        
-        
-        let yellow:UIColor = UIColor(red: 250.0/255.0, green: 217.0/255.0, blue: 97/255.0, alpha: 1.0)
-        let orange:UIColor = UIColor(red: 247/255.0, green: 107/255.0, blue: 28/255.0, alpha: 1.0)
-        
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.colors = [yellow.CGColor, orange.CGColor]
-        view.layer.insertSublayer(gradient, atIndex: 0)
-        
-        
         self.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         
-    }
-
-    func buttonify(btn:UIButton) {
-        let boldButtonFont = UIFont(name: "Phosphate-Solid", size: 36)
-        let lightColor = UIColor.whiteColor()
-
-        btn.titleLabel?.font = boldButtonFont
-        btn.setTitleColor(lightColor, forState: UIControlState.Normal)
-        btn.layer.borderColor = lightColor.CGColor
-        btn.layer.borderWidth = 2.0
-        btn.layer.cornerRadius = 30.0
-
     }
     
     override func didReceiveMemoryWarning() {

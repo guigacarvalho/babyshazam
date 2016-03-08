@@ -19,6 +19,8 @@ class AnalysisViewController:UIViewController {
     @IBOutlet weak var analisysLabel: UILabel!
     @IBOutlet weak var screenTitle: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var yesBtn: UIButton!
+    @IBOutlet weak var noBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,8 @@ class AnalysisViewController:UIViewController {
         setupView.setUpStrongText(screenTitle)
         setupView.setUpCursiveText(questionLabel)
         setupView.setUpBackButton(backBtn)
-        
+        setupView.buttonify(yesBtn)
+        setupView.buttonify(noBtn)
         
         
 //        let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/2ee8f34d21e8febfdefb2b3a403f18a43818d70a/sample_keypath_json"

@@ -33,11 +33,13 @@ class UIShortcuts: NSObject {
         gradient.colors = [yellow.CGColor, orange.CGColor]
         screen.layer.insertSublayer(gradient, atIndex: 0)
     }
+    
     func setUpBackButton(btn:UIButton) {
         btn.titleLabel!.font = bigFont
         btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
     }
+    
     func setUpBigText(titleLabel:UILabel){
         let titleText = NSAttributedString(string: titleLabel.text!, attributes: [
             NSStrokeColorAttributeName : UIColor.flatWhiteColor(),
@@ -47,13 +49,27 @@ class UIShortcuts: NSObject {
             ])
         titleLabel.attributedText = titleText
     }
+    
     func setUpStrongText(titleLabel:UILabel){
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.font = strongFont
     }
+    
     func setUpCursiveText(titleLabel:UILabel){
         titleLabel.font = cursiveFont
         titleLabel.textColor = UIColor.whiteColor()
+    }
+    
+    func buttonify(btn:UIButton) {
+        let boldButtonFont = UIFont(name: "Phosphate-Solid", size: 36)
+        let lightColor = UIColor.whiteColor()
+        
+        btn.titleLabel?.font = boldButtonFont
+        btn.setTitleColor(lightColor, forState: UIControlState.Normal)
+        btn.layer.borderColor = lightColor.CGColor
+        btn.layer.borderWidth = 2.0
+        btn.layer.cornerRadius = 30.0
+        
     }
     
 }
