@@ -1,27 +1,33 @@
-platform :ios, '8.0'
+platform :ios, '9.2'
 use_frameworks!
 inhibit_all_warnings!
-# network library
-pod 'Alamofire', '~> 3.1.5'
 
-# json object mapper
-pod 'AlamofireObjectMapper', '~> 2.1.0'
-pod 'ObjectMapper'
+target "babyshazam" do
+	# network library
+	pod 'Alamofire', '~> 3.1.5'
 
-# image cache
-pod 'Kingfisher', '~> 1.9'
+	# json object mapper
+	pod 'AlamofireObjectMapper', '~> 2.1.0'
+	pod 'ObjectMapper'
 
-# auto layout
-pod 'Cartography', '~> 0.6'
+	# image cache
+	pod 'Kingfisher', '~> 1.9'
 
-# showing empty state for views
-pod 'DZNEmptyDataSet'
+	# auto layout
+	pod 'Cartography', '~> 0.6'
 
-# logger
-pod 'XCGLogger', '~> 3.2'
+	# showing empty state for views
+	pod 'DZNEmptyDataSet'
 
-# color scheme
-pod 'ChameleonFramework/Swift'
+	# logger
+	pod 'XCGLogger', '~> 3.2'
 
-# global dispatch queue
-pod 'GCDKit', '~> 1.1.7'
+	# color scheme
+	pod 'ChameleonFramework/Swift'
+
+	# global dispatch queue
+	pod 'GCDKit', '~> 1.1.7'
+
+	# db and persistence
+	pod 'RealmSwift'
+end
